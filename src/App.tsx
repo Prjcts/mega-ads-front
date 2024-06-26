@@ -1,49 +1,22 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-import { TestInterface2 } from '@backend-types/index';
+import './App.scss';
 
-function App() {
-  const [count, setCount] = useState(0);
-  const b: TestInterface2 = {}
-
+const App = () => {
   return (
     <>
-      <div>
-        <a
-          href='https://vitejs.dev'
-          target='_blank'>
-          <img
-            src={viteLogo}
-            className='logo'
-            alt='Vite logo'
-          />
-        </a>
-        <a
-          href='https://react.dev'
-          target='_blank'>
-          <img
-            src={reactLogo}
-            className='logo react'
-            alt='React logo'
-          />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className='card'>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
+      <header className="header">
+        <h1 className="header__logo">
+          <strong>Mega </strong> Ads
+        </h1>
+        <button className="header__addButton">Add Ad</button>
+        <div className="header__search">
+          <input type="text" className="header__input" />
+          <button className="header__find">Find</button>
+        </div>
+      </header>
+
+      <div className="map"></div>
     </>
   );
-}
+};
 
-export default App;
+export { App };
