@@ -1,6 +1,6 @@
-import {  SyntheticEvent, useContext, useState } from 'react';
+import { SyntheticEvent, useContext, useState } from 'react';
 import { Btn } from '../common/Btn';
-import style from './Header.module.scss';
+import styles from './Header.module.scss';
 import { SearchContext } from 'src/contexts/search.context';
 
 const Header = () => {
@@ -12,11 +12,11 @@ const Header = () => {
     setSearch(inputVal);
   };
   return (
-    <header className={style.header}>
-      <h1 className={style.header__logo}>
+    <header className={styles.header}>
+      <h1 className={styles.header__logo}>
         <strong>Mega </strong> Ads
       </h1>
-      <Btn text="Add Ad"></Btn>
+      <Btn to="/add" text="Add Ad" modifier="link"/>
       <form className="header__search" onSubmit={setSearchFromLocalState}>
         <input
           type="text"

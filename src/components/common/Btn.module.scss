@@ -10,6 +10,10 @@
     border-radius: 8px;
     border: 1px solid transparent;
 
+    &--link {
+      text-decoration: none;
+    }
+    
     &--search {
       margin-left: 10px;
     }

@@ -44,7 +44,7 @@ const SingleAd = ({ id }: Props) => {
   return (
     <>
       <h2>{id}</h2>
-      <h2>name: {ad?.name}</h2>
+      <h2>name: {ad.name}</h2>
       <h2>
         price:{' '}
         {!!ad.price && (
@@ -55,7 +55,7 @@ const SingleAd = ({ id }: Props) => {
       </h2>
       <h2>
         url:{' '}
-        <a href={ad?.url} target="_blank" rel="noreferrer">
+        <a href={ad.url} target="_blank" rel="noreferrer">
           Open the advert{' '}
         </a>
       </h2>
