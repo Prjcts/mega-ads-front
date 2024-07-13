@@ -1,0 +1,17 @@
+.header {
+  &__button {
+    // display: block;
+    // height: 1.5rem;
+    padding: 0 2rem;
+    background-color: #2a913e;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    &--search {
+      margin-left: 10px;
+    }
+  }
+}

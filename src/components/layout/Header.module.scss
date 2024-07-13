@@ -1,0 +1,19 @@
+.header {
+  background-color: #6200ee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 95%;
+  border-radius: 5px;
+  color: #ffffff;
+
+  &__logo {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  &__input {
+    border-radius: 3px;
+  }
+}

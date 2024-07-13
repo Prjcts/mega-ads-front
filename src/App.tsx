@@ -1,21 +1,17 @@
+import { useState } from 'react';
+import { Header } from './components/layout/Header';
+import {Map} from './components/Map/Map'
 import './App.scss';
+import {SearchContext} from './contexts/search.context'
 
 const App = () => {
-  return (
-    <>
-      <header className="header">
-        <h1 className="header__logo">
-          <strong>Mega </strong> Ads
-        </h1>
-        <button className="header__button">Add Ad</button>
-        <div className="header__search">
-          <input type="text" className="header__input" />
-          <button className="header__button header__button--search">Find</button>
-        </div>
-      </header>
+const [search, setSearch] = useState('')
 
-      <div className="map"></div>
-    </>
+  return (
+  <SearchContext.Provider value={{search, setSearch}}>
+    <Header />
+    <Map />
+  </SearchContext.Provider>  
   );
 };
 

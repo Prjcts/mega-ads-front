@@ -1,0 +1,11 @@
+.map {
+  background-color: green;
+  width: 95%;
+
+  height: calc(100vh - 85px);
+  // padding: 0.5rem 1rem;
+}
+
+:global(.leaflet-container) {
+  height: 100% !important;
+}
