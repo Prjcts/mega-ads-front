@@ -24,7 +24,7 @@ const Header = () => {
           value={inputVal}
           onChange={(e) => setInputVal(e.target.value)}
         />
-        <Btn text="Find" modifier="search"></Btn>
+        <Btn text="Find" modfier="search"></Btn>
       </form>
     </header>
   );
