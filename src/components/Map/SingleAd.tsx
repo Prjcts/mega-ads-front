@@ -53,9 +53,9 @@ const SingleAd = ({ id }: Props) => {
           </p>
         )}{' '}
       </h2>
-      <h2>
+      <h>
         url:{' '}
-        <a href={ad?.url} target="_blank" rel="noreferrer">
+        <href={ad?.url} target="_blank" rel="noreferrer">
           Open the advert{' '}
         </a>
       </h2>
