@@ -43,7 +43,6 @@ const SingleAd = ({ id }: Props) => {
   }
   return (
     <>
-      <h2>{id}</h2>
       <h2>name: {ad.name}</h2>
       <h2>
         price:{' '}

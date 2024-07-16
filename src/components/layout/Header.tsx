@@ -16,15 +16,18 @@ const Header = () => {
       <h1 className={styles.header__logo}>
         <strong>Mega </strong> Ads
       </h1>
-      <Btn to="/add" text="Add Ad" modifier="link"/>
-      <form className="header__search" onSubmit={setSearchFromLocalState}>
+      <Btn to="/add" text="Add Ad" />
+      <form
+        className={styles.header__search}
+        onSubmit={setSearchFromLocalState}
+      >
         <input
           type="text"
-          className="header__input"
+          className={styles.header__input}
           value={inputVal}
           onChange={(e) => setInputVal(e.target.value)}
         />
-        <Btn text="Find" modfier="search"></Btn>
+        <Btn text="Find" modifier="search"></Btn>
       </form>
     </header>
   );
